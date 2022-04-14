@@ -1,0 +1,24 @@
+print("0.Quit")
+print("1.Add number to phonebook")
+print("2.Search phone number")
+dictionary_one = {}
+while True:
+        n=int(input("enter Number[0/1/2]"))
+        if n==1:
+                name = input("enter name:")
+                phonenumber = input("enter phone number:")
+                emailadress = input("enter email adress:")
+                adress = input("enter adress:")
+                Workplace = input("enter workplace:")
+                Designation = input("enter designation:")
+                Notes = input("enter notes:")
+                dictionary_one[name] = phonenumber, emailadress,adress,Workplace,Designation,Notes
+                print(dictionary_one)
+
+        elif n==2:
+                name1=input("enter name to Search for information in phonebook  ")
+                print("Information of" ,name1, "is ", dictionary_one[name1])
+     
+        elif n==0:
+                break
+        
